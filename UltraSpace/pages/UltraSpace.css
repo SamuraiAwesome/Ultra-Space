@@ -1,0 +1,21 @@
+body{
+    background-image: url(../warpride.jpg);
+    background-repeat: no-repeat;
+    color: #66cdaa;
+    font-family: "Roboto", sans-serif;
+}
+h1{
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+nav{
+    background-color: #000080
+}
+a{
+    text-decoration: none;
+    color:#6495ED;
+}
+a:hover{
+    color:#7fffd4;
+}

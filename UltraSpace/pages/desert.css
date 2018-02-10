@@ -1,0 +1,17 @@
+body{
+    background-image: url(../pherospace.png);
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: #F0E68C;
+    color:#6B8E23;
+}
+a:hover{
+    color: #5F9EA0;
+}
+
+h3{
+    text-align: center;
+    color: #9932CC;
+    font-family: 'Amatic SC', cursive;
+}
