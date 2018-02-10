@@ -39,20 +39,25 @@ function setNum2() {
 }
 
 function setAnswer() {
+    //Convert the strings...
   num1 = parseInt(num1, 10);
   num2 = parseInt(num2, 10);
+  //...and now the operators: plus,
  if (op == "+"){
      solvd= num1 + num2;
- }
+ } //minus,
  else if (op == "-"){
      solvd= num1 - num2;
- }
+ } //multiplication,
  else if (op == "*"){
      solvd= num1 * num2;
- }
+ } //and division!
  else if (op == "/"){
      solvd= num1 / num2;
  }
+ alert("Calculating...")
+ alert("Necrozma used Photon Geyser to reveal the answer!")
+ alert("Necrozma: Lie... Lie... Liight!")
 answer.textContent = solvd;
 }
 function setPlus() {
