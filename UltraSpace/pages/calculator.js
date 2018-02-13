@@ -72,4 +72,5 @@ function setTimes() {
 function setDivide() {
     op= "/";
 }
+// Is the branch function working?
 
