@@ -6,6 +6,9 @@ var minusButton = document.getElementById("minus");
 var timesButton = document.getElementById("times");
 var divideButton = document.getElementById("divide");
 var solveButton = document.getElementById("solve");
+var greatButton = document.getElementById(">");
+var lessButton = document.getElementById("<");
+var moduloButton = document.getElementById("modulo");
 var num1 = 0;
 var num2 = 0;
 var op = 0;
@@ -29,6 +32,12 @@ timesButton.addEventListener('click', setTimes, false);
 divideButton.addEventListener('click', setDivide, false);
 
 solveButton.addEventListener('click', setAnswer, false);
+
+greatButton.addEventListener('click', setGreat, false);
+
+lessButton.addEventListener('click', setLess, false);
+
+moduloButton.addEventListener('click', setModulo, false);
 //...and now the functions.
 function setNum1(
     ) {
@@ -71,6 +80,15 @@ function setTimes() {
 }
 function setDivide() {
     op= "/";
+}
+function setGreat() {
+    op= ">";
+}
+function setLess() {
+    op= "<";
+}
+function setModulo() {
+    op= "%";
 }
 // Is the branch function working?
 
