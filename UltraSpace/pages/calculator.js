@@ -64,9 +64,18 @@ function setAnswer() {
  else if (op == "/"){
      solvd= num1 / num2;
  }
- alert("Calculating...")
- alert("Necrozma used Photon Geyser to reveal the answer!")
- alert("Necrozma: Lie... Lie... Liight!")
+ else if (op == ">"){
+     solvd= num1 > num2;
+ }
+ else if (op == "<"){
+     solvd= num1 < num2;
+ }
+ else if (op == "%"){
+     solvd= num1 % num2;
+ }
+ alert("Calculating...");
+ alert("Necrozma used Photon Geyser to reveal the answer!");
+ alert("Necrozma: Lie... Lie... Liight!");
 answer.textContent = solvd;
 }
 function setPlus() {
