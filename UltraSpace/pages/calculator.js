@@ -66,14 +66,31 @@ function setAnswer() {
  }
  else if (op == ">"){
      solvd= num1 > num2;
+     if (solvd == true){
+         solvd = "True.";
+     }
+     else if (solvd == false){
+         solvd = "No, you fool.";
+     }
+     else{
+         solvd = "Something went wrong.";
+     }
  }
  else if (op == "<"){
      solvd= num1 < num2;
+      if (solvd == true){
+         solvd = "True.";
+     }
+     else if (solvd == false){
+         solvd = "No, you fool.";
+     }
+     else{
+         solvd = "Something went wrong.";
+     }
  }
  else if (op == "%"){
      solvd= num1 % num2;
  }
- alert("Calculating...");
  alert("Necrozma used Photon Geyser to reveal the answer!");
  alert("Necrozma: Lie... Lie... Liight!");
 answer.textContent = solvd;
