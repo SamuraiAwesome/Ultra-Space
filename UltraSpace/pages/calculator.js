@@ -47,7 +47,7 @@ function setNum2() {
 	 num2 = prompt("Enter a number.");
 }
 
-function setAnswer() {
+function getAnswer() {
     //Convert the strings...
   num1 = parseInt(num1, 10);
   num2 = parseInt(num2, 10);
@@ -55,32 +55,31 @@ function setAnswer() {
   switch (op) {
       case '+':
           solvd= num1 + num2;
-          break;
+          return solvd;
       case '-':
           solvd= num1 - num2;
-          break;
+          return solvd;
       case '*':
           solvd= num1 * num2;
-          break;
+          return solvd;
       case '/':
           solvd= num1 / num2;
-          break;
+          return solvd;
      case '>':
           solvd= num1 > num2 ? "True." : "No, you fool.";
-          break;
+          return solvd;
      case '<':
           solvd= num1 < num2 ? "True." : "No, you fool.";
-          break;
+          return solvd;
      case '%':
           solvd= num1 % num2;
-          break;
+          return solvd;
       default:
          solvd = "Something went wrong";
+         return solvd;
    }
 
- alert("Necrozma used Photon Geyser to reveal the answer!");
- alert("Necrozma: Lie... Lie... Liight!");
-answer.textContent = solvd;
+ 
 }
 function setPlus() {
     op= "+";
@@ -102,6 +101,15 @@ function setLess() {
 }
 function setModulo() {
     op= "%";
+}
+function showAnswer(solvd) {
+    alert("Necrozma used Photon Geyser to reveal the answer!");
+ alert("Necrozma: Lie... Lie... Liight!");
+answer.textContent = solvd;
+}
+function setAnswer() {
+    solvd = getAnswer();
+    showAnswer(solvd);
 }
 // Is the branch function working?
 
