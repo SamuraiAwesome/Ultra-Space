@@ -52,45 +52,32 @@ function setAnswer() {
   num1 = parseInt(num1, 10);
   num2 = parseInt(num2, 10);
   //...and now the operators: plus,
- if (op == "+"){
-     solvd= num1 + num2;
- } //minus,
- else if (op == "-"){
-     solvd= num1 - num2;
- } //multiplication,
- else if (op == "*"){
-     solvd= num1 * num2;
- } //division,
- else if (op == "/"){
-     solvd= num1 / num2;
- } //greater than,
- else if (op == ">"){
-     solvd= num1 > num2;
-     if (solvd == true){
-         solvd = "True.";
-     }
-     else if (solvd == false){
-         solvd = "No, you fool.";
-     }
-     else{
-         solvd = "Something went wrong.";
-     }
- } //less than,
- else if (op == "<"){
-     solvd= num1 < num2;
-      if (solvd == true){
-         solvd = "True.";
-     }
-     else if (solvd == false){
-         solvd = "No, you fool.";
-     }
-     else{
-         solvd = "Something went wrong.";
-     }
- } //and remainder.
- else if (op == "R"){
-     solvd= num1 % num2;
- }
+  switch (op) {
+      case '+':
+          solvd= num1 + num2;
+          break;
+      case '-':
+          solvd= num1 - num2;
+          break;
+      case '*':
+          solvd= num1 * num2;
+          break;
+      case '/':
+          solvd= num1 / num2;
+          break;
+     case '>':
+          solvd= num1 > num2 ? "True." : "No, you fool.";
+          break;
+     case '<':
+          solvd= num1 < num2 ? "True." : "No, you fool.";
+          break;
+     case '%':
+          solvd= num1 % num2;
+          break;
+      default:
+         solvd = "Something went wrong";
+   }
+
  alert("Necrozma used Photon Geyser to reveal the answer!");
  alert("Necrozma: Lie... Lie... Liight!");
 answer.textContent = solvd;
