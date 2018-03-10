@@ -16,9 +16,9 @@ var answer = document.getElementById("answer");
 console.log(num1Button);
 console.log(num2Button);
 //Test end. Now come the event listeners...
-num1Button.addEventListener('click', setNum1, true);
+num1Button.addEventListener('click', setNum1, false);
 
-num2Button.addEventListener('click', setNum2, true);
+num2Button.addEventListener('click', setNum2, false);
 
 plusButton.addEventListener('click', setPlus, false);
 
