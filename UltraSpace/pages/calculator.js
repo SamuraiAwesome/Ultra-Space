@@ -9,10 +9,11 @@ var solveButton = document.getElementById("solve");
 var greatButton = document.getElementById(">");
 var lessButton = document.getElementById("<");
 var moduloButton = document.getElementById("modulo");
+var dropButton = document.getElementById("drop");
 var num1 = 0;
 var num2 = 0;
 var op = 0;
-var solvd="Something went wrong"
+var solvd="Something went wrong";
 
 var answer = document.getElementById("answer");
 //Here we test that num1Button and num2Button are connected to their elements.
@@ -38,6 +39,8 @@ greatButton.addEventListener('click', setGreat, false);
 lessButton.addEventListener('click', setLess, false);
 
 moduloButton.addEventListener('click', setModulo, false);
+
+dropButton.addEventListener('click', myFunction, false);
 //...and now the functions.
 function setNum1(
     ) {
@@ -111,5 +114,24 @@ function setAnswer() {
     solvd = getAnswer();
     showAnswer(solvd);
 }
+//This is where we have the dropdown script.
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
 // Is the branch function working?
 
