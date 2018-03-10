@@ -60,10 +60,10 @@ function setAnswer() {
  } //multiplication,
  else if (op == "*"){
      solvd= num1 * num2;
- } //and division!
+ } //division,
  else if (op == "/"){
      solvd= num1 / num2;
- }
+ } //greater than,
  else if (op == ">"){
      solvd= num1 > num2;
      if (solvd == true){
@@ -75,7 +75,7 @@ function setAnswer() {
      else{
          solvd = "Something went wrong.";
      }
- }
+ } //less than,
  else if (op == "<"){
      solvd= num1 < num2;
       if (solvd == true){
@@ -87,8 +87,8 @@ function setAnswer() {
      else{
          solvd = "Something went wrong.";
      }
- }
- else if (op == "%"){
+ } //and remainder.
+ else if (op == "R"){
      solvd= num1 % num2;
  }
  alert("Necrozma used Photon Geyser to reveal the answer!");
