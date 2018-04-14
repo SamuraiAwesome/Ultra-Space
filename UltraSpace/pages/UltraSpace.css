@@ -19,3 +19,33 @@ a{
 a:hover{
     color:#7fffd4;
 }
+img{
+    border-width: 20px;
+}
+.new{
+    border:2px solid #FF8C00;
+    text-align:center;
+    border-radius:6px;
+    height:197px;
+    width:197px;
+    background-color:#FF8C00;
+    font-family:"Verdana", sans-serif;
+    display:inline-block;
+}
+/*This is the code for the links. Not the nav, the other links.
+Not the Nintendo kind either.*/
+.info{
+    background-image:none;
+    background-color: #FF8C00;
+    color:#FF4500;
+    font-size:26px;
+}
+#product{
+    float:left;
+}
+#character{
+    float:right;
+}
+#other{
+    clear: both;
+}
