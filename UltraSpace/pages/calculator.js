@@ -39,8 +39,7 @@ lessButton.addEventListener('click', setLess, false);
 
 moduloButton.addEventListener('click', setModulo, false);
 //...and now the functions.
-function setNum1(
-    ) {
+function setNum1() {
       num1 = prompt("Enter a number.");
 }	
 function setNum2() {

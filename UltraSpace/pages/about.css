@@ -1,3 +1,15 @@
 h1{
     text-align: left;
+    font-size: 80px;
+    color:#2F5F5F;
 }
+a{
+    color:#2F4F4F;
+}
+a:hover{
+    color: #2b7FaF;
+}
+nav{
+    background-color: #191950;
+}
+/* 2b7FaF */
