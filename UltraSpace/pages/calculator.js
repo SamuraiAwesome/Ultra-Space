@@ -48,8 +48,8 @@ function setNum2() {
 
 function getAnswer() {
     //Convert the strings...
-  num1 = parseInt(num1, 10);
-  num2 = parseInt(num2, 10);
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
   //...and now the operators: plus,
   switch (op) {
       case '+':
