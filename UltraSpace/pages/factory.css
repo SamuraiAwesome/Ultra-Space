@@ -1,0 +1,16 @@
+body{
+    background-image: url(../celespace.jpg)
+}
+h1{
+    color: #608000;
+}
+a{
+    color: #6B8E23;
+}
+a:hover{
+    color: #32CD32;
+}
+nav{
+    color: DarkGreen;
+    background-color: #60512d;
+}
